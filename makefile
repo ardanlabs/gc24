@@ -8,6 +8,12 @@ SHELL = $(if $(wildcard $(SHELL_PATH)),/bin/ash,/bin/bash)
 # https://www.ardanlabs.com/blog/2024/02/kubernetes-memory-limits-go.html
 # https://www.youtube.com/watch?v=Dm7yuoYTx54&list=PLq2Nv-Sh8Eba2gEaId35K2aAUFdpbKx9D&index=6
 
+# https://www.ardanlabs.com/training/individual-on-demand/
+# https://www.ardanlabs.com/scholarship/
+
+# bill@ardanlabs.com
+#
+
 run:
 	go run api/cmd/services/sales/main.go | go run api/cmd/tooling/logfmt/main.go
 
