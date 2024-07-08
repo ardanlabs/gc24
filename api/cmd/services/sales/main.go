@@ -54,3 +54,19 @@ func run(ctx context.Context, log *logger.Logger) error {
 
 	return nil
 }
+
+type User struct {
+	Name string
+}
+
+func (u User) String() string {
+	return u.Name
+}
+
+type Stringer interface {
+	String() string
+}
+
+func bill[T Stringer](s T) string {
+	return s.String()
+}
